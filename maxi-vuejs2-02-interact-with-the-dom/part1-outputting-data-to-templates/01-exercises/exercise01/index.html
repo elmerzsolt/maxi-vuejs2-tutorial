@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VueJS</title>
+	<link rel="stylesheet" href="">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+<div id="app">
+	<h1 v-once>{{ title }}</h1>
+	<p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
+	<hr>
+	<p v-html="finishedLink"></p>
+	<script src="index.js"></script>
+</div>
+
+</body>
+</html>
